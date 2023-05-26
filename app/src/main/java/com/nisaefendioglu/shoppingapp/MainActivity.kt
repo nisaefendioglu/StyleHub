@@ -21,7 +21,9 @@ class MainActivity : AppCompatActivity() {
 
         prepareRecyclerView()
         observeProductList()
-        viewModel.getAllProducts()
+        viewModel.getAllProducts().observe(this, Observer { productList ->
+            productAdapter.setProductList(productList)
+        })
     }
 
     private fun prepareRecyclerView() {
@@ -32,8 +34,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun observeProductList() {
-        viewModel.observeProductLiveData().observe(this, Observer { productList ->
+private fun observeProductList() {
+        viewModel.getAllProducts().observe(this, Observer { productList ->
             productAdapter.setProductList(productList)
         })
     }
