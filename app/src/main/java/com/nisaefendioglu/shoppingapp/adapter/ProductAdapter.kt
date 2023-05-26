@@ -2,6 +2,7 @@ package com.nisaefendioglu.shoppingapp.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.AdapterView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.nisaefendioglu.shoppingapp.R
@@ -10,6 +11,17 @@ import com.nisaefendioglu.shoppingapp.model.Product
 
 class ProductAdapter(private var productList: List<Product> = emptyList()) :
     RecyclerView.Adapter<ProductAdapter.ViewHolder>() {
+
+    private var itemClickListener: OnItemClickListener? = null
+
+    interface OnItemClickListener {
+        fun onItemClick(product: Product)
+    }
+
+    fun setOnItemClickListener(listener: OnItemClickListener) {
+        this.itemClickListener = listener
+    }
+
 
     fun setProductList(productList: List<Product>) {
         this.productList = productList
@@ -34,8 +46,13 @@ class ProductAdapter(private var productList: List<Product> = emptyList()) :
                 .load(product.thumbnail)
                 .error(R.drawable.placeholder)
                 .into(productCardImageview)
+
+            holder.itemView.setOnClickListener {
+                itemClickListener?.onItemClick(product)
+            }
         }
     }
+
 
     override fun getItemCount(): Int = productList.size
 
