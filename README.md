@@ -3,8 +3,7 @@
 StyleHub is a simple Android application that allows users to browse and view product listings. It is built using Retrofit, MVVM architecture, and Data Binding.
 
 ## Demo
-
-![Screenshot_4](https://github.com/nisaefendioglu/ShoppingApp/assets/48391281/76175f49-0835-4f74-8993-663df43579ef)
+![Screenshot_4](https://github.com/nisaefendioglu/StyleHub/assets/48391281/54e5f5f6-4361-40fd-b896-8931eb1395d6)
 
 ## Features
 
