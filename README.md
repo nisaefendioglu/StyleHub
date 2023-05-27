@@ -2,6 +2,10 @@
 
 StyleHub is a simple Android application that allows users to browse and view product listings. It is built using Retrofit, MVVM architecture, and Data Binding.
 
+## Demo
+
+![Screenshot_4](https://github.com/nisaefendioglu/ShoppingApp/assets/48391281/76175f49-0835-4f74-8993-663df43579ef)
+
 ## Features
 
 - Fetches product data from the server using the following service URL: `https://dummyjson.com/products`
@@ -40,10 +44,6 @@ The following dependencies are used in this project:
 - Data Binding: `androidx.databinding:databinding-runtime:7.1.0-alpha01`
 
 Make sure to sync the project after adding these dependencies.
-
-## Demo
-
-![Screenshot_4](https://github.com/nisaefendioglu/ShoppingApp/assets/48391281/76175f49-0835-4f74-8993-663df43579ef)
 
 ## License
 
