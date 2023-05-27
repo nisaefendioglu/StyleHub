@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:layout_marginBottom="8dp"
-                android:text="Today's Offers"
+                android:text="@string/today_s_offers"
                 android:textColor="@color/blue_700"
                 android:textSize="18sp"
                 android:textStyle="bold"
