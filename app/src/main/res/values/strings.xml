@@ -1,24 +1,15 @@
 <resources>
-    <string name="app_name">Shopping</string>
+    <string name="app_name">Shopping App</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_home">Home</string>
-    <string name="title_cart">Cart</string>
-    <string name="title_wishlist">Wishlist</string>
-    <string name="title_account">Account</string>
     <string name="title_product_name">Product Name</string>
     <string name="title_brand">Apple</string>
     <string name="title_price">$899</string>
-    <string name="sample_address">No.3, Dubai Main Road, Dubai Cross Street, Abu dabi, Dubai - 600089</string>
-    <string name="title_activity_search_result">SearchResultActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="search_hint">Search Products..</string>
     <string name="product_discount">11% Off</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="buy_now">Buy Now</string>
+
+    <string name="return_policy_title">Return Policy:</string>
+    <string name="return_policy_description">Items must be returned within 30 days of purchase. Items must be in their original condition, unused, and with all tags attached. Refunds will be issued in the original form of payment. Shipping and handling fees are non-refundable. Some items may be non-returnable or subject to specific return conditions. Please contact customer support for further assistance with returns.\n\nNote: This is a general return policy. Specific return policies may vary depending on the retailer or product.</string>
+    <string name="today_s_offers">Today\'s Offers</string>
+
 </resources>
