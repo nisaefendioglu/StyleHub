@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none"
+    android:id="@+id/fragment_home"
     tools:context=".MainActivity">
 
     <androidx.core.widget.NestedScrollView
@@ -27,7 +28,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/top_offer_label"
+                android:id="@+id/txtview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -41,6 +42,21 @@
                 app:layout_constraintStart_toStartOf="@+id/imageView"
                 app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+            <ProgressBar
+                android:id="@+id/loadingIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/progress_bg"
+                android:progress="0"
+                app:layout_constraintBottom_toBottomOf="@+id/txtview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recylerview"
                 android:layout_width="match_parent"
@@ -52,7 +68,7 @@
                 app:layoutManager="LinearLayoutManager"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/top_offer_label"
+                app:layout_constraintTop_toBottomOf="@id/txtview"
                 tools:listitem="@layout/item_card" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

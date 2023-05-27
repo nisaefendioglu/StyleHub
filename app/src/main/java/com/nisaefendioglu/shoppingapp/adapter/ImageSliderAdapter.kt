@@ -1,4 +1,4 @@
-package com.nisaefendioglu.shoppingapp
+package com.nisaefendioglu.shoppingapp.adapter
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.nisaefendioglu.shoppingapp.R
 
 class ImageSliderAdapter(private val context: Context, private val images: List<String>) :
     RecyclerView.Adapter<ImageSliderAdapter.ImageSliderViewHolder>() {

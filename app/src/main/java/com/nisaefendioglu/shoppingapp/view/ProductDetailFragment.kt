@@ -1,4 +1,4 @@
-package com.nisaefendioglu.shoppingapp
+package com.nisaefendioglu.shoppingapp.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,8 +8,9 @@ import android.widget.ImageView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
-import com.bumptech.glide.Glide
 import com.google.android.material.tabs.TabLayoutMediator
+import com.nisaefendioglu.shoppingapp.R
+import com.nisaefendioglu.shoppingapp.adapter.ImageSliderAdapter
 import com.nisaefendioglu.shoppingapp.databinding.FragmentProductDetailBinding
 import com.nisaefendioglu.shoppingapp.model.Product
 
@@ -34,7 +35,8 @@ class ProductDetailFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_product_detail, container, false)
+        binding = DataBindingUtil.inflate(inflater,
+            R.layout.fragment_product_detail, container, false)
         val product = arguments?.getParcelable<Product>(DATA_KEY)
         product?.let { displayProductDetails(it) }
         return binding.root
